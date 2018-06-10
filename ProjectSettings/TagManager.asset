@@ -12,6 +12,9 @@ TagManager:
   - SadSong
   - Item
   - GameOver
+  - Rocks
+  - Fenix
+  - Normal
   layers:
   - Default
   - TransparentFX

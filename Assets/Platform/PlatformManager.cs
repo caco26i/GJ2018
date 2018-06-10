@@ -36,7 +36,7 @@ public class PlatformManager : MonoBehaviour {
 		for (int i = 0; i < numberOfObjects; i++)
 		{
 			objectQueue.Enqueue((Transform)Instantiate(
-				prefab, new Vector3(0f, 1000f, 0f), Quaternion.identity));
+                prefabs[Random.Range(0, 3)], new Vector3(0f, 1000f, 0f), Quaternion.identity));
 		}
 
 		enabled = false;
@@ -57,7 +57,7 @@ public class PlatformManager : MonoBehaviour {
         positionBooster.z = scale.z;
 		booster.SpawnIfAvailable(positionBooster);
 
-		portalCircle.SpawnIfAvailable(position);
+		//portalCircle.SpawnIfAvailable(position);
 		//portalTriangle.SpawnIfAvailable(position);
 
 		Transform o = objectQueue.Dequeue();

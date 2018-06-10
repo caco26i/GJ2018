@@ -34,7 +34,7 @@ public class Cat : MonoBehaviour
     private void GameStart()
 	{
 		lifes = 3;
-		shape = Shapes.Normal;
+		shape = (Shapes) 0;
 		color = Colors.Normal;
 		trail = Trail.First;
 		GameObject.FindWithTag("Life1").GetComponent<Animator>().SetBool("on", true);
@@ -64,6 +64,11 @@ public class Cat : MonoBehaviour
 		// Set the z of the cat
 		transform.position = new Vector3(transform.position.x, transform.position.y, currentDepth);
         //TODO CONSIDERAR EFECTO CON FENIX
+
+        if  (shape == (Shapes) 2)
+        {
+            GetComponent<Rigidbody>().AddForce(new Vector3(0.6f, 0.4f, 0), ForceMode.VelocityChange);
+        }
     }
 
 
@@ -87,9 +92,16 @@ public class Cat : MonoBehaviour
 		color = (Colors)(int)Random.Range(0, 3);
 	}
 
-	public void RandomShape()
+    public void SetShape(Shapes pshape)
+    {
+        shape = pshape;
+    }
+
+    public void RandomShape()
 	{
-		shape = (Shapes)(int)Random.Range(0, 3);
+        Shapes newShape = (Shapes)(int)Random.Range(0, 3);
+        if (newShape == shape) RandomShape();
+        else shape = newShape;
 	}
 
 	public void AnimateSad()

@@ -2,8 +2,9 @@
 
 public class Booster : MonoBehaviour {
 
-	public Vector3 offset, rotationVelocity;
-	public float recycleOffset, spawnChance;
+    public Cat Player;
+    public Vector3 offset, rotationVelocity;
+    public float recycleOffset, spawnChance;
 	public static bool respawn;
 
 	void Start () {
@@ -21,7 +22,10 @@ public class Booster : MonoBehaviour {
 	
 	void OnTriggerEnter (Collider other) {
 		Runner.AddBoost();
-		GUIManager.SetRandomRule();
+        //Player.SetShape(next.shape);
+        GameObject.FindWithTag("Player").BroadcastMessage("RandomShape");
+
+        GUIManager.SetRandomRule();
 	}
 
 	public void SpawnIfAvailable (Vector3 position) {
