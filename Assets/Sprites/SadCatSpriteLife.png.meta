@@ -1,0 +1,170 @@
+fileFormatVersion: 2
+guid: e65b803ea1fd7ca4eafdf2cb7dea7baa
+timeCreated: 1513397137
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SadCatSpriteLife_0
+    21300002: SadCatSpriteLife_1
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: 1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 64
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SadCatSpriteLife_0
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 48
+        width: 69
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 21.5, y: 19}
+        - {x: -4.475212, y: 19}
+        - {x: -7.6305847, y: 14.244179}
+        - {x: -14.744186, y: 11.118935}
+        - {x: -19.689041, y: 6.8769073}
+        - {x: -34.5, y: 5.048065}
+        - {x: -34.5, y: -6.207741}
+        - {x: -31.746613, y: -12.322983}
+        - {x: -31.595253, y: -22.941349}
+        - {x: -21.000717, y: -31.255596}
+        - {x: -17.411224, y: -32.814583}
+        - {x: -10.102142, y: -33.507473}
+        - {x: -7.7092896, y: -33.999996}
+        - {x: 18.563812, y: -34}
+        - {x: 22.930168, y: -32.07263}
+        - {x: 33.5, y: -27}
+        - {x: 34.5, y: -26}
+        - {x: 34.5, y: 15}
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SadCatSpriteLife_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 43
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 33, y: 20.5}
+        - {x: -27, y: 20.5}
+        - {x: -28.057144, y: 17.835999}
+        - {x: -33.5, y: 9.400536}
+        - {x: -33.5, y: -9.191673}
+        - {x: -32.621628, y: -10.131508}
+        - {x: -32.754456, y: -22.576233}
+        - {x: -22.35199, y: -29.934284}
+        - {x: -11.3550415, y: -33.350273}
+        - {x: 15.249847, y: -33.459846}
+        - {x: 21.909698, y: -31.598282}
+        - {x: 27.475159, y: -31.334244}
+        - {x: 33, y: -26.5}
+        - {x: 34, y: -25.5}
+        - {x: 34, y: 19.5}
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
