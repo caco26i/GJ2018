@@ -35,17 +35,7 @@ public class Runner : MonoBehaviour
 	{
 		if (Input.GetButtonDown("Jump"))
 		{
-			if (touchingPlatform)
-			{
-				GetComponent<Rigidbody>().AddForce(jumpVelocity, ForceMode.VelocityChange);
-				touchingPlatform = false;
-			}
-			else if (boosts > 0)
-			{
-				GetComponent<Rigidbody>().AddForce(boostVelocity, ForceMode.VelocityChange);
-				boosts -= 1;
-				GUIManager.SetBoosts(boosts);
-			}
+
 		}
 		distanceTraveled = transform.localPosition.x;
 		score = distanceTraveled + bonuses;
@@ -110,5 +100,20 @@ public class Runner : MonoBehaviour
     void OnCollisionEnter()
     {
         touchingPlatform = true;
+    }
+
+    public void Jump() {
+        print("#");
+        if (touchingPlatform)
+        {
+            GetComponent<Rigidbody>().AddForce(jumpVelocity, ForceMode.VelocityChange);
+            touchingPlatform = false;
+        }
+        else if (boosts > 0)
+        {
+            GetComponent<Rigidbody>().AddForce(boostVelocity, ForceMode.VelocityChange);
+            boosts -= 1;
+            GUIManager.SetBoosts(boosts);
+        }
     }
 }
